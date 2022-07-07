@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title>A good madlib is has been found!</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  </head>
+  <body>
+    <h1>Choose words carefully to create your own madlib.</h1>
+    <form action="/madlib" method="post"> 
+    @* action=postcard tells ASP.NET Core MVC where to submit form info. This attribute must be set to the path of another route in controller. If a route decorator is used-- set it to that path *@
+    <label for="noun1">a noun:</label>
+    @* input-id matches label-for *@
+    <input id="noun1" name="noun1" type="text">
+
+    <label for="name1">a name:</label>
+    <input id="name1" name="name1" type="text">
+
+    <label for="place1">a place:</label>
+    <input id="place1" name="place1" type="text">
+
+    <label for="place2">a place:</label>
+    <input id="place2" name="place2" type="text">
+
+    <label for="noun2">a noun:</label>
+    <input id="noun2" name="noun2" type="text">
+
+    <label for="adjective1">an adjective:</label>
+    <input id="adjective1" name="adjective1" type="text">
+
+    <label for="ominousNoun1">an ominous noun:</label>
+    <input id="ominousNoun1" name="ominousNoun1" type="text">
+
+    <label for="noun3">a noun:</label>
+    <input id="noun3" name="noun3" type="text">
+
+    <label for="faceAdjective1">a adjective to describe a face:</label>
+    <input id="faceAdjective1" name="faceAdjective1" type="text">
+
+    <label for="faceNoun1">a noun that is like a face:</label>
+    <input id="faceNoun1" name="faceNoun1" type="text">
+
+    <label for="food1">a food:</label>
+    <input id="food1" name="food1" type="text">
+
+    <label for="characterAdjective1">an adjective to describe a character:</label>
+    <input id="characterAdjective1" name="characterAdjective1" type="text">
+
+    <label for="adjective2">an adjective:</label>
+    <input id="adjective2" name="adjective2" type="text">
+    
+    <button type="submit">Go!</button>
+    @* button type MUst be submit with a form *@
+    </form>
+  </body>
+</html>
